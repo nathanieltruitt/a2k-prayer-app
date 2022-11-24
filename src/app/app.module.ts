@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { HomeModule } from './components/home/home.module';
 import { SharedModule } from './components/shared/shared.module';
 import { AuthModule } from '@auth0/auth0-angular';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [AppComponent],
@@ -18,6 +19,7 @@ import { AuthModule } from '@auth0/auth0-angular';
       clientId: 'CLfWKBcwPQyn4UB3BGtnlpvcLj3ikDb4',
     }),
     SharedModule,
+    FontAwesomeModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
