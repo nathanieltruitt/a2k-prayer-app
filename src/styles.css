@@ -3,3 +3,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  --color-primary: #ef4d62;
+  --color-light: #fff;
+  --color-dark: #111;
+
+  /* accents */
+  --color-accent-100: #ec4899;
+  --color-accent-200: #f04e62;
+  --color-accent-300: #352a58;
+
+  font-family: "Noto Sans", sans-serif;
+}
