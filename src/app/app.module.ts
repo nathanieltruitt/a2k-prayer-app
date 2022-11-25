@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { HomeModule } from './components/home/home.module';
 import { SharedModule } from './components/shared/shared.module';
 import { AuthModule } from '@auth0/auth0-angular';
+import { PrayersModule } from './components/prayer/prayers.module';
 
 @NgModule({
   declarations: [AppComponent],
@@ -13,6 +14,7 @@ import { AuthModule } from '@auth0/auth0-angular';
     BrowserModule,
     AppRoutingModule,
     HomeModule,
+    PrayersModule,
     AuthModule.forRoot({
       domain: 'dev-5uc1pddae8rn2b8x.us.auth0.com',
       clientId: 'CLfWKBcwPQyn4UB3BGtnlpvcLj3ikDb4',

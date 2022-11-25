@@ -19,6 +19,16 @@ const routes: Routes = [
     path: 'login',
     component: AuthComponent,
   },
+  {
+    path: 'prayers',
+    loadChildren: () =>
+      import('./components/prayer/prayers.module').then((m) => m.PrayersModule),
+  },
+  {
+    path: 'groups',
+    loadChildren: () =>
+      import('./components/groups/groups.module').then((m) => m.GroupsModule),
+  },
 ];
 
 @NgModule({

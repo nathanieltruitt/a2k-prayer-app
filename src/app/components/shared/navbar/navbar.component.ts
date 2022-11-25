@@ -1,7 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { AuthService } from 'src/app/core/services/auth.service';
 import { faHome } from '@fortawesome/free-solid-svg-icons';
-import { faArrowCircleLeft } from '@fortawesome/free-solid-svg-icons';
+import {
+  faArrowCircleLeft,
+  faLayerGroup,
+  faPrayingHands,
+} from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-navbar',
@@ -11,6 +15,8 @@ import { faArrowCircleLeft } from '@fortawesome/free-solid-svg-icons';
 export class NavbarComponent implements OnInit {
   faHome = faHome;
   faArrowCircleLeft = faArrowCircleLeft;
+  faLayerGroup = faLayerGroup;
+  faPrayingHands = faPrayingHands;
   constructor(private authService: AuthService) {}
 
   ngOnInit(): void {}

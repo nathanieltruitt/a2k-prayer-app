@@ -8,6 +8,6 @@ import { CommonModule } from '@angular/common';
 @NgModule({
   declarations: [NavbarComponent, AuthComponent],
   imports: [CommonModule, FontAwesomeModule, RouterModule],
-  exports: [NavbarComponent],
+  exports: [NavbarComponent, CommonModule],
 })
 export class SharedModule {}
