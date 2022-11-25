@@ -1,1 +1,14 @@
-<div class="btm-nav"></div>
+<div class="btm-nav" *ngIf="isAuthenticated() | async">
+  <button routerLink="/home" routerLinkActive="active">
+    <fa-icon [icon]="faHome"></fa-icon>
+  </button>
+  <a routerLink="/prayers" routerLinkActive="active"
+    ><fa-icon [icon]="faHome"></fa-icon
+  ></a>
+  <a routerLink="/groups" routerLinkActive="active"
+    ><fa-icon [icon]="faHome"></fa-icon
+  ></a>
+  <a (click)="onLogout()"
+    ><fa-icon class="logout-icon" [icon]="faArrowCircleLeft"></fa-icon
+  ></a>
+</div>
