@@ -1,1 +1,14 @@
-<p>navbar works!</p>
+<div class="btm-nav" *ngIf="isAuthenticated() | async">
+  <button routerLink="/home" routerLinkActive="apa-active">
+    <fa-icon [icon]="faHome"></fa-icon>
+  </button>
+  <button routerLink="/prayers" routerLinkActive="apa-active">
+    <fa-icon [icon]="faPrayingHands"></fa-icon>
+  </button>
+  <button routerLink="/groups" routerLinkActive="apa-active">
+    <fa-icon [icon]="faLayerGroup"></fa-icon>
+  </button>
+  <button (click)="onLogout()">
+    <fa-icon class="logout-icon" [icon]="faArrowCircleLeft"></fa-icon>
+  </button>
+</div>
