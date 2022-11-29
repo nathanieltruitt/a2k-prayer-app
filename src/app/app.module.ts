@@ -7,6 +7,7 @@ import { HomeModule } from './components/home/home.module';
 import { SharedModule } from './components/shared/shared.module';
 import { AuthModule } from '@auth0/auth0-angular';
 import { PrayersModule } from './components/prayer/prayers.module';
+import { StoreModule } from '@ngrx/store';
 
 @NgModule({
   declarations: [AppComponent],
@@ -22,6 +23,7 @@ import { PrayersModule } from './components/prayer/prayers.module';
       cacheLocation: 'localstorage',
     }),
     SharedModule,
+    StoreModule.forRoot({}, {}),
   ],
   providers: [],
   bootstrap: [AppComponent],

@@ -1,10 +1,9 @@
 .logout-icon {
   transform: rotate(180deg);
-  color: #352a58;
 }
 
 .apa-active {
-  border-top: 2px solid #352a58;
+  border-top: 2px solid #fff;
   animation-name: btm-nav;
   animation-duration: 500ms;
 }

@@ -1,23 +1,11 @@
 <div class="btm-nav" *ngIf="isAuthenticated() | async">
-  <button
-    class="text-[#352a58]"
-    routerLink="/home"
-    routerLinkActive="apa-active"
-  >
+  <button routerLink="/home" routerLinkActive="apa-active">
     <fa-icon [icon]="faHome"></fa-icon>
   </button>
-  <button
-    class="text-[#352a58]"
-    routerLink="/prayers"
-    routerLinkActive="apa-active"
-  >
+  <button routerLink="/prayers" routerLinkActive="apa-active">
     <fa-icon [icon]="faPrayingHands"></fa-icon>
   </button>
-  <button
-    class="text-[#352a58]"
-    routerLink="/groups"
-    routerLinkActive="apa-active"
-  >
+  <button routerLink="/groups" routerLinkActive="apa-active">
     <fa-icon [icon]="faLayerGroup"></fa-icon>
   </button>
   <button (click)="onLogout()">
